@@ -8,9 +8,9 @@ const userData = {
   address: "Auckland, New Zealand",
   projects: [
     {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
-      imgUrl: "/tmk.jpg",
+      title: "Samoa Government Site Checker",
+      link: "https://www.samoagov.online/",
+      imgUrl: "/samoa_site_checker.png",
     },
   ],
   about: {
@@ -23,7 +23,7 @@ const userData = {
       `I can say confidently that I can build full stack web applications from start to finish either collaborating with a team or solo. Send me a message if our interests align`
     ],
     currentProject: "Samoa Govt Site Checker",
-    currentProjectUrl: "https://delicate-moonbeam-907a24.netlify.app/",
+    currentProjectUrl: "https://www.samoagov.online",
   },
   experience: [
     {
