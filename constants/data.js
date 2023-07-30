@@ -71,10 +71,10 @@ const userData = {
       company: "Datacom NZ",
       year: "2017",
       companyLink: "https://intel.com",
-      desc: "Developed pothole detection system with OpenCV and computer vision, detects potholes on roads and informs the driver.",
+      desc: "Learned Microsoft ASP .NET and worked on a feature for a internal web application that scanned Magnetic Tapes into Data Centre Storage",
     },
     {
-      title: "National University of Samoa - University Prepartory Year Certificate",
+      title: "National University of Samoa - University Preparatory Year Certificate",
       company: "National University of Samoa",
       year: "2014",
       companyLink: "https://www.nus.edu.ws/",
