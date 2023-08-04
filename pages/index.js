@@ -11,7 +11,7 @@ export default function Home({ repositories }) {
   return (
     <ContainerBlock
       title="Andre Westerlund - Developer, Writer, Creator"
-      description="This is Andre Westerlund's portfolio website"
+      description="This the portfolio website of Andre Westerlund"
     >
       <Hero />
       <FavouriteProjects />
