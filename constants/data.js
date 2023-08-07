@@ -11,11 +11,15 @@ const userData = {
       title: "Samoa Government Site Checker",
       link: "https://www.samoagov.online/",
       imgUrl: "/samoa_site_checker.png",
+      description: "",
+      technology: "",
     },
     {
       title: "Samoa IT Association Database Management System",
       link: "#          ",
       imgUrl: "/sita.png ",
+      description: "",
+      technology: "",
     },
   ],
   about: {
@@ -30,6 +34,44 @@ const userData = {
     currentProject: "Samoa Govt Site Checker",
     currentProjectUrl: "https://www.samoagov.online",
   },
+  achievements: [
+    {
+      title: "Foundation Top Arts Student",
+      organization: "National University of Samoa",
+      month: "December",
+      year: "2014"
+    },
+    {
+      title: "Bachelor of Science - Computer Science",
+      organization: "Victoria University of Wellington",
+      month: "December",
+      year: "2017"
+    },
+    {
+      title: "Bachelor of Science with Honors - Computer Science",
+      organization: "Victoria University of Wellington",
+      month: "December",
+      year: "2018"
+    },
+    {
+      title: "x3 Vodafone Samoa Employee Appreciation Award",
+      organization: "Vodafone Samoa",
+      month: "",
+      year: "2019, 2020, 2021"
+    },
+    {
+      title: "Meta Front-End Developer Certificate",
+      organization: "Coursera",
+      month: "February",
+      year: "2023"
+    },
+    {
+      title: "Meta Back-End Developer Certificate",
+      organization: "Coursera",
+      month: "February",
+      year: "2023"
+    },
+  ],
   experience: [
     {
       title: "Marketing Cloud Developer",
