@@ -11,9 +11,8 @@ export default function Achievements() {
         </h1>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
-        <div className="grid grid-cols-3 gap-5 dark:bg-gray-900 max-w-3xl mx-auto pt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 dark:bg-gray-900 max-w-3xl mx-auto pt-20">
           {userData.achievements.map((ac, idx) => (
-            <>
               <AchievementCard
                 key={idx}
                 title={ac.title}
@@ -22,7 +21,6 @@ export default function Achievements() {
                 organization={ac.organization}
                 imgUrl={ac.imgUrl}
               />
-            </>
           ))}
         </div>
       </div>
@@ -36,6 +34,7 @@ const AchievementCard = ({ title, month, year, organization, imgUrl }) => {
     <a className="rounded-3xl inline-block overflow-hidden shadow-xl max-w-xs cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300">
         <div className="relative group w-full overflow-hidden bg-black h-40 rounded-t-3xl">
             <Image
+            alt=""
             src={imgUrl}
             width={800}
             height={800}

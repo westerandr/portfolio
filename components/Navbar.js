@@ -15,8 +15,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-      <div className="flex  md:flex-row justify-between items-center">
+    <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
+      <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
             <h1 className="font-semibold text-xl dark:text-gray-100">
@@ -221,7 +221,7 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-      <div className="space-x-8 block md:hidden mt-4">
+      <div className="space-x-8 block flex-wrap md:hidden mt-4">
         <Link
           href="/about"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -239,6 +239,12 @@ export default function Navbar() {
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           Experience
+        </Link>
+        <Link
+          href="/achievements"
+          className="text-base font-normal text-gray-600 dark:text-gray-300"
+        >
+          Achievements
         </Link>
         <Link
           href="/contact"
