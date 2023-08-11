@@ -1,7 +1,25 @@
 import React from "react";
+import { useRouter } from "next/router";
 import userData from "@constants/data";
 
 export default function Contact() {
+  const router = useRouter()
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => router.push("/thank-you/"))
+      .catch((error) => _);
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -53,7 +71,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <form data-netlify="true" name="contact" className="form rounded-lg bg-white p-4 flex flex-col">
+          <form data-netlify="true" name="contact" method="POST" onSubmit={handleSubmit} className="form rounded-lg bg-white p-4 flex flex-col">
+            <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Your Name
