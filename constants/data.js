@@ -107,45 +107,52 @@ const userData = {
       `I've been utilizing React, Vue, Bootstrap, Tailwind, Node.js, Express, Django, MongoDB, Flutter, MySQL, PHP, Wordpress, Nginx, Apache to name a few.`,
       `I can say confidently that I can build full stack web applications from start to finish either collaborating with a team or solo. Send me a message if our interests align`
     ],
-    currentProject: "Samoa Govt Site Checker",
-    currentProjectUrl: "https://www.samoagov.online",
+    currentProject: "Growing Samoa Stack Overflow",
+    currentProjectUrl: "https://www.facebook.com/groups/948415479224570",
   },
   achievements: [
     {
       title: "Foundation Top Arts Student",
       organization: "National University of Samoa",
       month: "December",
-      year: "2014"
+      year: "2014",
+      imgUrl: "/nus.png"
     },
     {
       title: "Bachelor of Science - Computer Science",
       organization: "Victoria University of Wellington",
       month: "December",
-      year: "2017"
+      year: "2017",
+      imgUrl: "/vuw.png"
+
     },
     {
       title: "Bachelor of Science with Honors - Computer Science",
       organization: "Victoria University of Wellington",
       month: "December",
-      year: "2018"
+      year: "2018",
+      imgUrl: "/vuw.png"
     },
     {
-      title: "x3 Vodafone Samoa Employee Appreciation Award",
+      title: "Vodafone Samoa Employee Appreciation Award",
       organization: "Vodafone Samoa",
       month: "",
-      year: "2019, 2020, 2021"
+      year: "2019, 2020, 2021",
+      imgUrl: "/vodafone-logo.png"
     },
     {
       title: "Meta Front-End Developer Certificate",
       organization: "Coursera",
       month: "February",
-      year: "2023"
+      year: "2023",
+      imgUrl: "/meta.png"
     },
     {
       title: "Meta Back-End Developer Certificate",
       organization: "Coursera",
       month: "February",
-      year: "2023"
+      year: "2023",
+      imgUrl: "/meta.png"
     },
   ],
   experience: [

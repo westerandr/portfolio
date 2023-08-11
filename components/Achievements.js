@@ -1,4 +1,5 @@
 import userData from "@constants/data";
+import Image from "next/image";
 import React from "react";
 
 export default function Achievements() {
@@ -19,6 +20,7 @@ export default function Achievements() {
                 month={ac.month}
                 year={ac.year}
                 organization={ac.organization}
+                imgUrl={ac.imgUrl}
               />
             </>
           ))}
@@ -28,12 +30,36 @@ export default function Achievements() {
   );
 }
 
-const AchievementCard = ({ title, month, year, organization }) => {
+const AchievementCard = ({ title, month, year, organization, imgUrl }) => {
   return (
-    <div className="relative border p-4 rounded-md shadow-xl w-full bg-white dark:bg-gray-800 z-10 mx-4">
-      <h1 className="font-semibold text-xl">{title}</h1>
-      <p className="text-gray-600 text-sm dark:text-gray-400 my-2">{organization}</p>
-      <h6>{month} {year}</h6>
-    </div>
+    <div className="flex justify-center w-full">
+    <a className="rounded-3xl inline-block overflow-hidden shadow-xl max-w-xs cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-102 duration-300">
+        <div className="relative group w-full overflow-hidden bg-black h-40 rounded-t-3xl">
+            <Image
+            src={imgUrl}
+            width={800}
+            height={800}
+            className="object-fill w-full h-full transform duration-700 backdrop-opacity-100"
+            />
+            <div className="absolute bg-gradient-to-t from-black w-full h-full flex items-end justify-center -inset-y-0"><h1 className="font-bold text-lg text-white mb-2 pl-3">{title}</h1></div>
+        </div>
+        <div className="bg-white">
+            <div className="text-center px-3 pb-6 pt-2">
+                <p className="mt-2 font-sans font-light text-slate-700">
+                    {organization}
+                </p>
+            </div>
+            <div className="flex justify-center pb-3 text-slate-700">
+                <div className="text-center mr-3 border-r pr-3 last:border-r-0">
+                    <h2>{month}</h2>
+                </div>
+                <div className="text-center mr-3 border-r pr-3 last:border-r-0">
+                    <h2>{year}</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+
+</div>
   );
 };
