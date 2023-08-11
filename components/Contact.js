@@ -53,7 +53,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <form netlify className="form rounded-lg bg-white p-4 flex flex-col">
+          <form data-netlify="true" name="contact" method="POST" className="form rounded-lg bg-white p-4 flex flex-col">
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Your Name
