@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -8,7 +9,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Andre Westerlund - Developer, Writer, Creator and YouTuber",
+    title: "Andre Westerlund - Developer, Aspiring Entrepreneur & Tech Enthusiast",
     description: `I've been developing full stack applications for 3 years. Get in touch with me to know more.`,
     image: "/avatar.png",
     type: "website",
@@ -42,6 +43,20 @@ export default function ContainerBlock({ children, ...customMeta }) {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+        `}
+        </Script>
       </Head>
       <main className="dark:bg-gray-800 w-full">
         <Navbar />
