@@ -224,6 +224,7 @@ const userData = {
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/andrewesterlund/",
     github: "https://github.com/westerandr",
+    twitter: "https://twitter.com/andrewesterlund"
   },
 };
 
