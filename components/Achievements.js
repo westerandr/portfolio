@@ -40,7 +40,7 @@ const AchievementCard = ({ title, month, year, organization, imgUrl }) => {
             height={800}
             className="object-fill w-full h-full transform duration-700 backdrop-opacity-100"
             />
-            <div className="absolute bg-gradient-to-t from-black w-full h-full flex items-end justify-center -inset-y-0"><h1 className="font-bold text-lg text-white dark:text-gray-300 mb-2 pl-3">{title}</h1></div>
+            <div className="absolute bg-gradient-to-t from-black w-full h-full flex items-end justify-center -inset-y-0"><h1 className="font-bold text-lg text-white dark:text-gray-300 mb-2 pl-3 pr-1.5">{title}</h1></div>
         </div>
         <div className="bg-white dark:bg-slate-800">
             <div className="text-center px-3 pb-6 pt-2">

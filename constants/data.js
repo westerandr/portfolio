@@ -154,6 +154,13 @@ const userData = {
       year: "2023",
       imgUrl: "/meta.png"
     },
+    {
+      title: "Microsoft Certified: Azure Fundamentals",
+      organization: "Microsoft",
+      month: "September",
+      year: "2023",
+      imgUrl: "/ms.png"
+    },
   ],
   experience: [
     {
