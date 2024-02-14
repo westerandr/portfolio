@@ -103,9 +103,9 @@ const userData = {
       "I'm a software developer that loves building products and web applications that brings value to those around me",
     description: [
       `I've been fascinated with computers and software since I was 5 years old. Growing up, I have always had computers and applications in the back of my mind.`,
-      `After receiving a fully funded scholarship to study Computer Science at Victoria University in Wellington NZ; it has helped me to understand the fundamentals of data structures and algorithms. This allowed me to branch off into web development which I quite enjoyed and still do to this day.`,
+      `After receiving a fully funded scholarship to study Computer Science at Victoria University in Wellington NZ, I was able to understand and grasp the fundamentals of data structures and algorithms. This allowed me to branch off into web development which I quite enjoyed and still do to this day.`,
       `I've been utilizing React, Vue, Bootstrap, Tailwind, Node.js, Express, Django, MongoDB, Flutter, MySQL, PHP, Wordpress, Nginx, Apache to name a few.`,
-      `I can say confidently that I can build full stack web applications from start to finish either collaborating with a team or solo. Send me a message if our interests align`
+      `I can say confidently that I can build full stack web applications from start to finish either collaborating with a team or solo. Send me a message if our interests align.`
     ],
     currentProject: "Growing Samoa Stack Overflow",
     currentProjectUrl: "https://www.facebook.com/groups/948415479224570",
@@ -164,11 +164,18 @@ const userData = {
   ],
   experience: [
     {
+      title: "Full Stack Developer",
+      company: "Te Hiku Media",
+      year: "2024",
+      companyLink: "https://tehiku.nz/",
+      desc: "Currently working as a Full Stack Developer, working on a bunch of cool projects",
+    },
+    {
       title: "Marketing Cloud Developer",
       company: "Sleeq NZ",
       year: "2022",
       companyLink: "https://www.sleeq.global",
-      desc: "Currently working as a Marketing Cloud Developer, specializing in the Marketing Cloud platform in the Salesforce Ecosystem",
+      desc: "Worked as a Marketing Cloud Developer, specialized in the Marketing Cloud platform (Salesforce Ecosystem)",
     },
     {
       title: "Founder",
