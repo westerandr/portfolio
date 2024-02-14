@@ -145,14 +145,14 @@ const userData = {
       organization: "Coursera",
       month: "February",
       year: "2023",
-      imgUrl: "/meta.png"
+      imgUrl: "/meta.jpeg"
     },
     {
       title: "Meta Back-End Developer Certificate",
       organization: "Coursera",
       month: "February",
       year: "2023",
-      imgUrl: "/meta.png"
+      imgUrl: "/meta.jpeg"
     },
     {
       title: "Microsoft Certified: Azure Fundamentals",
@@ -160,6 +160,13 @@ const userData = {
       month: "September",
       year: "2023",
       imgUrl: "/ms.png"
+    },
+    {
+      title: "Salesforce Certified: Marketing Cloud Admin",
+      organization: "Salesforce",
+      month: "November",
+      year: "2023",
+      imgUrl: "/sfmc.png"
     },
   ],
   experience: [
