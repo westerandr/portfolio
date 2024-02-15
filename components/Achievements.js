@@ -40,15 +40,15 @@ const AchievementCard = ({ title, month, year, organization, imgUrl }) => {
             height={800}
             className="object-fill w-full h-full transform duration-700 backdrop-opacity-100"
             />
-            <div className="absolute bg-gradient-to-t from-black w-full h-full flex items-end justify-center -inset-y-0"><h1 className="font-bold text-lg text-white dark:text-gray-300 mb-2 pl-3 pr-1.5">{title}</h1></div>
+            <div className="absolute bg-gradient-to-t from-black w-full h-full flex items-end justify-center -inset-y-0"><h1 className="font-bold text-lg text-white shadow-black dark:text-gray-300 mb-2 pl-3 pr-1.5">{title}</h1></div>
         </div>
         <div className="bg-white dark:bg-slate-800">
             <div className="text-center px-3 pb-6 pt-2">
-                <p className="mt-2 font-sans font-light text-slate-700 dark:text-gray-300">
+                <p className="mt-2 font-sans font-light text-slate-700 dark:text-gray-300 dark:font-bold">
                     {organization}
                 </p>
             </div>
-            <div className="flex justify-center pb-3 text-slate-700 dark:text-gray-400">
+            <div className="flex justify-center pb-3 text-slate-700 dark:text-gray-300">
                 <div className="text-center mr-3 border-r pr-3 last:border-r-0">
                     <h2>{month}</h2>
                 </div>
