@@ -2,12 +2,36 @@ import React from "react";
 import Link from "next/link";
 
 export default function FavouriteProjects() {
+  const projects = [
+    {
+      title: "Samoa Govt Site Checker",
+      image: "/samoa_site_checker.png",
+      url: "https://samoagov-online.netlify.app/",
+      alt: "samoa govt site checker",
+      number: "01"
+    },
+    {
+      title: "Samoa IT Association DB Web Application",
+      image: "/sita.png",
+      url: "https://register.sita.ws",
+      alt: "sita dbms web app",
+      number: "02"
+    },
+    {
+      title: "ERC-721 Smart Contract",
+      image: "/doblins.png",
+      url: "https://etherscan.io/address/0x14e110de16cb44a2394759a3bfde861e2d989fd9#code",
+      alt: "erc721 smart contract",
+      number: "03"
+    }
+  ]
+
   return (
     <div className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <header className="flex flex-col md:flex-row justify-between items-center pt-40 mx-10 md:my-20 lg:my-0">
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center">
-            Favourite Projects
+            Favorite Projects
           </h1>
           <Link
             href="/projects"
@@ -96,4 +120,25 @@ export default function FavouriteProjects() {
       </div>
     </div>
   );
+}
+
+export function Project({ title, image, url, alt, number }) {
+  return <a href={url}
+    className="w-full block col-span-3 sm:col-span-1  object-cover"
+  >
+    <div className="relative overflow-hidden shadow-2xl">
+      {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
+      <img
+        src={image}
+        alt={alt}
+        className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
+      />
+      <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+        {title}
+      </h1>
+      <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+        {number}
+      </h1>
+    </div>
+  </a>
 }
