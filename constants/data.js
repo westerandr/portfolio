@@ -8,7 +8,7 @@ const userData = {
   projects: [
     {
       title: "Samoa Government Site Checker",
-      link: "https://www.samoagov.online/",
+      link: "https://samoagov-online.netlify.app/",
       imgUrl: "/samoa_site_checker.png",
       description: "Web app that checks the availability of Samoa Government Websites",
       technology: "Astro Web Framework, Tailwind CSS, Netlify Functions",
