@@ -7,6 +7,7 @@ const userData = {
   address: "Auckland, New Zealand",
   projects: [
     {
+      id: 1,
       title: "Samoa Government Site Checker",
       link: "https://samoagov-online.netlify.app/",
       imgUrl: "/samoa_site_checker.png",
@@ -14,6 +15,7 @@ const userData = {
       technology: "Astro Web Framework, Tailwind CSS, Netlify Functions",
     },
     {
+      id: 2,
       title: "Samoa IT Association Database Management System",
       link: "https://register.sita.ws/",
       imgUrl: "/sita.png ",
@@ -21,6 +23,7 @@ const userData = {
       technology: "Vue 3, Inertia, Laravel 10, Tailwind CSS, PHP 8, Docker, GitHub Actions.",
     },
     {
+      id: 3,
       title: "Doblins NFT Smart Contract",
       link: "https://etherscan.io/address/0x14e110de16cb44a2394759a3bfde861e2d989fd9#code",
       imgUrl: "/doblins.png ",
@@ -28,6 +31,23 @@ const userData = {
       technology: "Solidity, Remix, Python",
     },
     {
+      id: 4,
+      title: "Samoa Code Hub",
+      link: "https://www.samoacodehub.org/",
+      imgUrl: "/samoa_code_hub.png ",
+      description: "Website developed with the Samoa Code Hub community to showcase a network of local Samoan Developers",
+      technology: "Svelte, SvelteKit, Tailwind CSS, Vercel",
+    },
+    {
+      id: 5,
+      title: "Bluebird Lumber & Hardware E-Commerce Website",
+      link: "https://www.bluebirdlumber.ws/",
+      imgUrl: "/bbl.png ",
+      description: "E-Commerce website with custom payment gateway that allows revenue to be received by local ANZ Samoan Bank Account",
+      technology: "Wordpress, Woocommerce & ANZ Payment Gateway",
+    },
+    {
+      id: 6,
       title: "Vodafone Samoa Website",
       link: "https://www.vodafone.com.ws/",
       imgUrl: "/vodafone.png ",
@@ -35,6 +55,7 @@ const userData = {
       technology: "Wordpress, Docker, Nginx, CentOS Server",
     },
     {
+      id: 7,
       title: "Apia Finance Website",
       link: "https://www.apiafinance.com/",
       imgUrl: "/apia-finance.png ",
@@ -42,13 +63,15 @@ const userData = {
       technology: "Wordpress & Digital Ocean",
     },
     {
+      id: 8,
       title: "Passion Studios Website",
       link: "https://www.passionstudios.ws/",
       imgUrl: "/passionstudios.png ",
-      description: "Website portfolio for Passion Studio. ",
+      description: "Website developed for Passion Studio. ",
       technology: "HTML, CSS, JS, JQuery & GitHub Pages",
     },
     {
+      id: 9,
       title: "Coupon Web Application (Internal - VS)",
       link: "#",
       imgUrl: "/vodafone-logo.png ",
@@ -56,6 +79,7 @@ const userData = {
       technology: "HTML, CSS, JS, Bootstrap, EJS, ExpressJS, NodeJS, MonogDB, Docker",
     },
     {
+      id: 10,
       title: "Customer Feedback App & Web App (Internal - VS)",
       link: "#",
       imgUrl: "/vodafone-logo.png ",
@@ -63,6 +87,7 @@ const userData = {
       technology: "Flutter, React, CSS in JS, ExpressJS, NodeJS, MonogDB, Docker",
     },
     {
+      id: 11,
       title: "Vodafone Roadshow App (Internal - VS)",
       link: "#",
       imgUrl: "/vodafone-logo.png ",
@@ -70,6 +95,7 @@ const userData = {
       technology: "Flutter, HTML, CSS, JS, EJS, ExpressJS, NodeJS, MonogDB, Docker",
     },
     {
+      id: 12,
       title: "Vodafone Promotions Entry Checker (Internal - VS)",
       link: "#",
       imgUrl: "/vodafone-logo.png ",
@@ -77,6 +103,7 @@ const userData = {
       technology: "HTML, CSS, JS, EJS, ExpressJS, NodeJS",
     },
     {
+      id: 13,
       title: "Mobile Database Management System (Internal - VS)",
       link: "#",
       imgUrl: "/vodafone-logo.png ",
@@ -84,6 +111,7 @@ const userData = {
       technology: "HTML, CSS, JS, EJS, ExpressJS, NodeJS",
     },
     {
+      id: 14,
       title: "Ticket System (Internal - VS)",
       link: "#",
       imgUrl: "/vodafone-logo.png ",
@@ -91,6 +119,7 @@ const userData = {
       technology: "Flutter, ReactJS, Material UI, Redux, ExpressJS, NodeJS",
     },
     {
+      id: 15,
       title: "Mynas Gas Station Invoice Management System",
       link: "#",
       imgUrl: "/mynas.png ",
@@ -186,9 +215,9 @@ const userData = {
     },
     {
       title: "Founder",
-      company: "Samoa Stack Overflow",
+      company: "Samoa Code Hub",
       year: "2021",
-      companyLink: "#",
+      companyLink: "https://samoacodehub.org",
       desc: "Community of Samoa Developers/Programmers sharing knowledge and advocating for growing the tech industry in Samoa",
     },
     {

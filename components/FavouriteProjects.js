@@ -1,13 +1,19 @@
 import React from "react";
 import Link from "next/link";
 
+import userData from "@constants/data";
+
 export default function FavouriteProjects() {
+
+  const favoriteProjects = [4, 2, 5];
+  const projects = userData.projects.filter((project) => favoriteProjects.includes(project.id));
+
   return (
     <div className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <header className="flex flex-col md:flex-row justify-between items-center pt-40 mx-10 md:my-20 lg:my-0">
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center">
-            Favourite Projects
+            Featured Projects
           </h1>
           <Link
             href="/projects"
@@ -34,64 +40,27 @@ export default function FavouriteProjects() {
 
         {/* Grid starts here */}
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
-          {/* Single card */}
-          <a
-            href="https://samoagov-online.netlify.app/"
-            className="w-full block col-span-3 shadow-2xl"
-          >
-            <div className="relative overflow-hidden">
-              <img
-                src="/samoa_site_checker.png"
-                alt="samoa govt site checker"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Samoa Govt Site Checker
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                01
-              </h1>
-            </div>
-          </a>
-          {/* Single card */}
-          <a
-            href="https://register.sita.ws"
-            className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
-          >
-            <div className="relative overflow-hidden">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
-              <img
-                src="/sita.png"
-                alt="sita dbms web app"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Samoa IT Association DB Web Application
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                02
-              </h1>
-            </div>
-          </a>
-          {/* Single card */}
-          <a href="https://etherscan.io/address/0x14e110de16cb44a2394759a3bfde861e2d989fd9#code"
-            className="w-full block col-span-3 sm:col-span-1  object-cover"
-          >
-            <div className="relative overflow-hidden shadow-2xl">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
-              <img
-                src="/doblins.png"
-                alt="erc721 smart contract"
-                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                ERC-721 Smart Contract
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                03
-              </h1>
-            </div>
-          </a>
+          {projects.map((project, index) => {
+            return <a href={project.link}
+              className="w-full block col-span-3 sm:col-span-1 object-cover"
+            >
+              <div className="relative overflow-hidden shadow-2xl">
+                {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
+                <img
+                  src={project.imgUrl}
+                  alt={project.title.toLowerCase()}
+                  className="transform hover:scale-125 transition duration-2000 ease-out shadow-2xl"
+                />
+                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                  {project.title}
+                </h1>
+                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl shadow-lg bg-black p-1 rounded-md">
+                  0{index + 1}
+                </h1>
+              </div>
+            </a>
+          })}
+
         </div>
       </div>
     </div>
